@@ -148,9 +148,10 @@ public:
         fMineBlocksOnDemand = false;
 
         checkpointData = {
-            {
-              // these checkpoint blocks are from a previous version of TheHashCoins block chain and are no longer valid.
-              /*  { 2126, uint256S("0xc1958769f60417cd6d1753fd082f2ec0489935c8e59814fb87c410c8ba02913c")},
+              {
+                { 0, uint256S("0x3ae85767ad3ec3dc70877cef8e256fa2244f9f3de2fb8a43c5be972dc1db08a1")},
+                /*these checkpoint blocks are from a previous version of TheHashCoins block chain and are no longer valid.
+                { 2126, uint256S("0xc1958769f60417cd6d1753fd082f2ec0489935c8e59814fb87c410c8ba02913c")},
                 { 4446, uint256S("0xa66429c4b9f558f6dd3b31002d36e4c1c1fca1a85fb673d98494ccd3989c05e6")},
                 { 8858, uint256S("0x7d94fde73750f40f8b74720db826134799feab16dc4a8ec5912dbc154f7d23dd")},
                 { 8933, uint256S("0x8ae28ea75ae037b8875544030bc39ac26642bb03a8cb396527c51a148909563a")},
