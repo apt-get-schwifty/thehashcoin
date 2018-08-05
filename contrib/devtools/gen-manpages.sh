@@ -5,9 +5,9 @@ SRCDIR=${SRCDIR:-$TOPDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
 LITECOIND=${LITECOIND:-$SRCDIR/litecoind}
-LITECOINCLI=${LITECOINCLI:-$SRCDIR/litecoin-cli}
-LITECOINTX=${LITECOINTX:-$SRCDIR/litecoin-tx}
-LITECOINQT=${LITECOINQT:-$SRCDIR/qt/litecoin-qt}
+LITECOINCLI=${LITECOINCLI:-$SRCDIR/thehashcoin-cli}
+LITECOINTX=${LITECOINTX:-$SRCDIR/thehashcoin-tx}
+LITECOINQT=${LITECOINQT:-$SRCDIR/qt/thehashcoin-qt}
 
 [ ! -x $LITECOIND ] && echo "$LITECOIND not found or not executable." && exit 1
 

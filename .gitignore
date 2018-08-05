@@ -1,10 +1,10 @@
 *.tar.gz
 
 *.exe
-src/litecoin
+src/thehashcoin
 src/litecoind
-src/litecoin-cli
-src/litecoin-tx
+src/thehashcoin-cli
+src/thehashcoin-tx
 src/test/test_litecoin
 src/test/test_litecoin_fuzzy
 src/qt/test/test_litecoin-qt
@@ -80,13 +80,13 @@ src/qt/bitcoin-qt.includes
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-litecoin-qt
-litecoin-Qt.app
+thehashcoin-qt
+thehashcoin-Qt.app
 background.tiff*
 
 # Unit-tests
 Makefile.test
-litecoin-qt_test
+thehashcoin-qt_test
 
 # Resources cpp
 qrc_*.cpp

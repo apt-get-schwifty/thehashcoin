@@ -5,9 +5,9 @@ if BUILD_BITCOIND
 endif
 
 if ENABLE_QT
-  dist_man1_MANS+=litecoin-qt.1
+  dist_man1_MANS+=thehashcoin-qt.1
 endif
 
 if BUILD_BITCOIN_UTILS
-  dist_man1_MANS+=litecoin-cli.1 litecoin-tx.1
+  dist_man1_MANS+=thehashcoin-cli.1 thehashcoin-tx.1
 endif

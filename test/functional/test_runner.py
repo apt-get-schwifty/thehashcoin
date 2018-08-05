@@ -296,7 +296,7 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
     #Set env vars
     if "LITECOIND" not in os.environ:
         os.environ["LITECOIND"] = build_dir + '/src/litecoind' + exeext
-        os.environ["LITECOINCLI"] = build_dir + '/src/litecoin-cli' + exeext
+        os.environ["LITECOINCLI"] = build_dir + '/src/thehashcoin-cli' + exeext
 
     tests_dir = src_dir + '/test/functional/'
 
@@ -511,7 +511,7 @@ class RPCCoverage():
     Coverage calculation works by having each test script subprocess write
     coverage files into a particular directory. These files contain the RPC
     commands invoked during testing, as well as a complete listing of RPC
-    commands per `litecoin-cli help` (`rpc_interface.txt`).
+    commands per `thehashcoin-cli help` (`rpc_interface.txt`).
 
     After all tests complete, the commands run are combined and diff'd against
     the complete list to calculate uncovered RPC commands.
