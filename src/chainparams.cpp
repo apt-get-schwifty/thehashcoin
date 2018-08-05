@@ -75,13 +75,13 @@ public:
     CMainParams() {
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 3153600;
-        consensus.BIP16Height = 125; 
-        consensus.BIP34Height = 250;
-        consensus.BIP34Hash = uint256S("0x6ba58c9bbbe801e500300117a290af80161d386477884d7ef694fe714e24bee3");
-        consensus.BIP65Height = 500; 
-        consensus.BIP66Height = 750; 
+        consensus.BIP16Height = 0; 
+        consensus.BIP34Height = 0;
+        consensus.BIP34Hash = uint256S("0x3ae85767ad3ec3dc70877cef8e256fa2244f9f3de2fb8a43c5be972dc1db08a1");
+        consensus.BIP65Height = 0; 
+        consensus.BIP66Height = 0; 
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
-        consensus.nPowTargetTimespan = 15 * 60; // 15 minutes
+        consensus.nPowTargetTimespan = 30 * 60; // 30 minutes
         consensus.nPowTargetSpacing = 0.5 * 60; // 30 seconds
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
@@ -102,10 +102,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1563663600; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("000000000000000000000000000000000000000000000000000000173f9568e9");
+        consensus.nMinimumChainWork = uint256S("0x01");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x23d843e68d28aac8e47820ab981e408f9f6bfd643d13edeac1a4edffb9d57b86"); // block 961
+        consensus.defaultAssumeValid = uint256S("0x3ae85767ad3ec3dc70877cef8e256fa2244f9f3de2fb8a43c5be972dc1db08a1"); // block 961
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -121,7 +121,7 @@ public:
 
         genesis = CreateGenesisBlock(1530217200, 4662255, 0x1e0631b5, 1, 75 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x3ae85767ad3ec3dc70877cef8e256fa2244f9f3de2fb8a43c5be972dc1db08a1"));
+        assert(consensus.hashGenesisBlock == uint256S(""));
         assert(genesis.hashMerkleRoot == uint256S("0x45e37fb95121169542534355cb8b11f99cebfbe776d20154fa34ffcdfcb7510c"));
 
        //NO DNS SEEDS YET
@@ -150,12 +150,13 @@ public:
         checkpointData = {
               {
                 { 0, uint256S("0x3ae85767ad3ec3dc70877cef8e256fa2244f9f3de2fb8a43c5be972dc1db08a1")},
-                { 125, uint256S("0x9cbc1b3d856001c8de6509ac8acd82c7d82aff621620d27cf934a00ed3702cf6")},
+               // below blocks have been invalidated, reset block chain to genesis block
+               /* { 125, uint256S("0x9cbc1b3d856001c8de6509ac8acd82c7d82aff621620d27cf934a00ed3702cf6")},
                 { 250, uint256S("0x6ba58c9bbbe801e500300117a290af80161d386477884d7ef694fe714e24bee3")},
                 { 500, uint256S("0xca805f0e89a0363a975c375c5a7afcfb74f3fa10bff97006942223c5a4afd1ca")},
                 { 750, uint256S("0xdfda314f99254e515d1ead892a83c1e6c835ee8abe5da9535710de1a7a9832c9")},
                 { 939, uint256S("0x23d843e68d28aac8e47820ab981e408f9f6bfd643d13edeac1a4edffb9d57b86")}
-               
+               */
                 
                 
 
@@ -166,10 +167,10 @@ public:
 
         chainTxData = ChainTxData{
             // Data as of genesis
-              1533507546, // * UNIX timestamp of last known number of transactions
-              943,  // * total number of transactions between genesis and that timestamp
+              1530217200, // * UNIX timestamp of last known number of transactions
+              0,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
-              0.01532872303132668     // * estimated number of transactions per second after that timestamp
+              0.0001532872303132668     // * estimated number of transactions per second after that timestamp
         };
     }
 };
