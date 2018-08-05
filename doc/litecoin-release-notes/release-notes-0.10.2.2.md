@@ -18,7 +18,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/Thehashcoin-Qt (on Mac) or
-litecoind/thehashcoin-qt (on Linux).
+thehashcoind/thehashcoin-qt (on Linux).
 
 Downgrade warning
 ------------------
@@ -77,7 +77,7 @@ Notable changes since Thehashcoin v0.8
 ===================================
 
 - The Block data and indexes of v0.10 are incompatible with v0.8 clients.  You can upgrade from v0.8 but you downgrading is not possible.  For this reason you may want to make a backup copy of your Data Directory.
-- litecoind no longer sends RPC commands.  You must use the separate thehashcoin-cli command line utility.
+- thehashcoind no longer sends RPC commands.  You must use the separate thehashcoin-cli command line utility.
 - Watch-Only addresses are now possible.
 
 Credits

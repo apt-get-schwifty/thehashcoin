@@ -1,6 +1,6 @@
 <!-- This issue tracker is only for technical issues related to Thehashcoin Core.
 
-General thehashcoin questions and/or support requests and are best directed to the [litecointalk.io forums](https://litecointalk.io/).
+General thehashcoin questions and/or support requests and are best directed to the [thehashcointalk.io forums](https://thehashcointalk.io/).
 
 For reporting security issues, please contact the Thehashcoin developers on the #thehashcoin-dev Freenode IRC channel or alternatively you can email us at contact@thehashcoin.org.
 

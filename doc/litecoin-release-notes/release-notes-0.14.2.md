@@ -53,7 +53,7 @@ Testnet3 has been deprecated and replaced with Testnet4. The server port has bee
 the same (19332).
 
 Testnet faucets can be located at:
-- http://testnet.litecointools.com
+- http://testnet.thehashcointools.com
 - http://testnet.thrasher.io
 
 Developers who require the new testnet blockchain paramaters can find them [here](https://github.com/thehashcoin-project/thehashcoin/blob/master/src/chainparams.cpp#L220).

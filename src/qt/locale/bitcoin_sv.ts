@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>These are your Thehashcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Detta är dina Thehashcoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Litecoins.</translation>
+        <translation>Detta är dina Thehashcoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar Thehashcoins.</translation>
     </message>
     <message>
         <source>These are your Thehashcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -173,7 +173,7 @@ Var vänlig och försök igen.</translation>
         <translation>Bekräfta kryptering av plånbok</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR THEHASHCOINS&lt;/b&gt;!</source>
         <translation>VARNING: Om du krypterar din plånbok och glömmer ditt lösenord, kommer du att &lt;b&gt;FÖRLORA ALLA DINA THEHASHCOIN&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -185,7 +185,7 @@ Var vänlig och försök igen.</translation>
         <translation>Plånbok krypterad</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your thehashcoins from being stolen by malware infecting your computer.</source>
         <translation>%1 kommer nu att stänga ner för att färdigställa krypteringen. Tänk på att en krypterad plånbok inte skyddar mot stöld om din dator är infekterad med en keylogger.</translation>
     </message>
     <message>
@@ -344,7 +344,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>Send coins to a Thehashcoin address</source>
-        <translation>Skicka litecoins till en Thehashcoin-adress</translation>
+        <translation>Skicka thehashcoins till en Thehashcoin-adress</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -915,8 +915,8 @@ Var vänlig och försök igen.</translation>
         <translation>Nyligen gjorda transaktioner visas inte korrekt och därför kan din plånboks saldo visas felaktigt. Denna information kommer att visas korrekt så snart din plånbok har synkroniserat klart med thehashcoin nätverket enligt detaljer nedan.</translation>
     </message>
     <message>
-        <source>Attempting to spend litecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation>Försöka sig på att spendera litecoins som påverkas av transaktioner som ännu inte visas kommer inte bli accepterade av nätverket. </translation>
+        <source>Attempting to spend thehashcoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation>Försöka sig på att spendera thehashcoins som påverkas av transaktioner som ännu inte visas kommer inte bli accepterade av nätverket. </translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1826,7 +1826,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Thehashcoin network.</source>
-        <translation>Ett frivilligt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. NB: Meddelandet kommer inte att sändas med betalningen över Litecoinnätverket.</translation>
+        <translation>Ett frivilligt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. NB: Meddelandet kommer inte att sändas med betalningen över Thehashcoinnätverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2215,7 +2215,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>Warning: Invalid Thehashcoin address</source>
-        <translation>Varning: Felaktig Litecoinadress</translation>
+        <translation>Varning: Felaktig Thehashcoinadress</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2258,7 +2258,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>The Thehashcoin address to send the payment to</source>
-        <translation>Litecoinadress att sända betalning till</translation>
+        <translation>Thehashcoinadress att sända betalning till</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2277,8 +2277,8 @@ Var vänlig och försök igen.</translation>
         <translation>Radera denna post</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less litecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Avgiften dras från beloppet som skickas. Mottagaren kommer att få mindre litecoins än du angivit i belopp-fältet. Om flera mottagare valts kommer avgiften delas jämt.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less thehashcoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Avgiften dras från beloppet som skickas. Mottagaren kommer att få mindre thehashcoins än du angivit i belopp-fältet. Om flera mottagare valts kommer avgiften delas jämt.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2302,7 +2302,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>A message that was attached to the thehashcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Thehashcoin network.</source>
-        <translation>Ett meddelande som bifogades thehashcoin-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Litecoinnätverket.</translation>
+        <translation>Ett meddelande som bifogades thehashcoin-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Thehashcoinnätverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2346,12 +2346,12 @@ Var vänlig och försök igen.</translation>
         <translation>&amp;Signera Meddelande</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive litecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Du kan underteckna meddelanden/avtal med dina adresser för att bevisa att du kan ta emot litecoins som skickats till dem. Var försiktig så du inte undertecknar något oklart eller konstigt, eftersom phishing-angrepp kan försöka få dig att underteckna din identitet till dem. Underteckna endast väldetaljerade meddelanden som du godkänner.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive thehashcoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Du kan underteckna meddelanden/avtal med dina adresser för att bevisa att du kan ta emot thehashcoins som skickats till dem. Var försiktig så du inte undertecknar något oklart eller konstigt, eftersom phishing-angrepp kan försöka få dig att underteckna din identitet till dem. Underteckna endast väldetaljerade meddelanden som du godkänner.</translation>
     </message>
     <message>
         <source>The Thehashcoin address to sign the message with</source>
-        <translation>Litecoinadress att signera meddelandet med</translation>
+        <translation>Thehashcoinadress att signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2407,7 +2407,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>The Thehashcoin address the message was signed with</source>
-        <translation>Litecoinadressen som meddelandet signerades med</translation>
+        <translation>Thehashcoinadressen som meddelandet signerades med</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Thehashcoin address</source>
@@ -2958,7 +2958,7 @@ Var vänlig och försök igen.</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Skicka Litecoins</translation>
+        <translation>Skicka Thehashcoins</translation>
     </message>
     <message>
         <source>Increasing transaction fee failed</source>
@@ -3884,7 +3884,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Otillräckligt med litecoins</translation>
+        <translation>Otillräckligt med thehashcoins</translation>
     </message>
     <message>
         <source>Loading block index...</source>

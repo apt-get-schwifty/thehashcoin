@@ -2,12 +2,12 @@
 
 *.exe
 src/thehashcoin
-src/litecoind
+src/thehashcoind
 src/thehashcoin-cli
 src/thehashcoin-tx
-src/test/test_litecoin
-src/test/test_litecoin_fuzzy
-src/qt/test/test_litecoin-qt
+src/test/test_thehashcoin
+src/test/test_thehashcoin_fuzzy
+src/qt/test/test_thehashcoin-qt
 
 # autoreconf
 Makefile.in
@@ -98,7 +98,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_litecoin.coverage/
+test_thehashcoin.coverage/
 total.coverage/
 coverage_percent.txt
 

@@ -77,21 +77,21 @@ Build Thehashcoin Core
     or
 
         cd ~/thehashcoin/src
-        cp litecoind /usr/local/bin/
+        cp thehashcoind /usr/local/bin/
         cp thehashcoin-cli /usr/local/bin/
 
 Running
 -------
 
-Thehashcoin Core is now available at `./src/litecoind`
+Thehashcoin Core is now available at `./src/thehashcoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=litecoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Thehashcoin/thehashcoin.conf"
+    echo -e "rpcuser=thehashcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Thehashcoin/thehashcoin.conf"
 
     chmod 600 "/Users/${USER}/Library/Application Support/Thehashcoin/thehashcoin.conf"
 
-The first time you run litecoind, it will start downloading the blockchain. This process could take several hours.
+The first time you run thehashcoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
@@ -100,7 +100,7 @@ You can monitor the download process by looking at the debug.log file:
 Other commands:
 -------
 
-    ./src/litecoind -daemon # Starts the thehashcoin daemon.
+    ./src/thehashcoind -daemon # Starts the thehashcoin daemon.
     ./src/thehashcoin-cli --help # Outputs a list of command-line options.
     ./src/thehashcoin-cli help # Outputs a list of RPC commands when the daemon is running.
 

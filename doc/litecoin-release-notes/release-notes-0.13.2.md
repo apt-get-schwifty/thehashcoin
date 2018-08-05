@@ -124,7 +124,7 @@ overridden with the option `-rpccookiefile`.
 This is similar to Tor's CookieAuthentication: see
 https://www.torproject.org/docs/tor-manual.html.en
 
-This allows running litecoind without having to do any manual configuration.
+This allows running thehashcoind without having to do any manual configuration.
 
 Relay: Any sequence of pushdatas in OP_RETURN outputs now allowed
 -----------------------------------------------------------------
@@ -201,7 +201,7 @@ information, pass `-debug=tor`.
 Notifications through ZMQ
 -------------------------
 
-Litecoind can now (optionally) asynchronously notify clients through a
+Thehashcoind can now (optionally) asynchronously notify clients through a
 ZMQ-based PUB socket of the arrival of new transactions and blocks.
 This feature requires installation of the ZMQ C API library 4.x and
 configuring its use through the command line or configuration file.
@@ -380,16 +380,16 @@ caching. A sample config for apache2 could look like:
     SSLCertificateFile /etc/apache2/ssl/server.crt
     SSLCertificateKeyFile /etc/apache2/ssl/server.key
 
-    <Location /litecoinrpc>
+    <Location /thehashcoinrpc>
         ProxyPass http://127.0.0.1:9332/
         ProxyPassReverse http://127.0.0.1:9332/
         # optional enable digest auth
         # AuthType Digest
         # ...
 
-        # optional bypass litecoind rpc basic auth
+        # optional bypass thehashcoind rpc basic auth
         # RequestHeader set Authorization "Basic <hash>"
-        # get the <hash> from the shell with: base64 <<< litecoinrpc:<password>
+        # get the <hash> from the shell with: base64 <<< thehashcoinrpc:<password>
     </Location>
 
     # Or, balance the load:
@@ -401,7 +401,7 @@ Other P2P Changes
 -----------------
 
 The list of banned peers is now stored on disk rather than in memory.
-Restarting litecoind will no longer clear out the list of banned peers; instead
+Restarting thehashcoind will no longer clear out the list of banned peers; instead
 a new RPC call (`clearbanned`) can be used to manually clear the list.  The new
 `setban` RPC call can also be used to manually ban or unban a peer.
 
@@ -819,8 +819,8 @@ covered by the txid. This provides several immediate benefits:
   (such as hardware wallets), reduces the amount of data the signature
   generator needs to download, and allows the signature generator to operate
   more quickly.  This is made possible by having the generator sign the amount
-  of litecoins they think they are spending, and by having full nodes refuse to
-  accept those signatures unless the amount of litecoins being spent is exactly
+  of thehashcoins they think they are spending, and by having full nodes refuse to
+  accept those signatures unless the amount of thehashcoins being spent is exactly
   the same as was signed.  For non-segwit transactions, wallets instead had to
   download the complete previous transactions being spent for every payment
   they made, which could be a slow operation on hardware wallets and in other

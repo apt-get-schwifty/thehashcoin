@@ -8,7 +8,7 @@ Running
 ---------------------
 After compiling Thehashcoin-core, the benchmarks can be run with:
 
-    src/bench/bench_Litecoin
+    src/bench/bench_Thehashcoin
 
 The output will look similar to:
 ```
@@ -43,7 +43,7 @@ Help
 ---------------------
 `-?` will print a list of options and exit:
 
-    src/bench/bench_Litecoin -?
+    src/bench/bench_Thehashcoin -?
 
 Notes
 ---------------------

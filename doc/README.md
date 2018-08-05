@@ -16,7 +16,7 @@ The following are some helpful notes on how to run Thehashcoin on your native pl
 Unpack the files into a directory and run:
 
 - `bin/thehashcoin-qt` (GUI) or
-- `bin/litecoind` (headless)
+- `bin/thehashcoind` (headless)
 
 ### Windows
 
@@ -31,7 +31,7 @@ Drag Thehashcoin-Core to your applications folder, and then run Thehashcoin-Core
 * See the documentation at the [Thehashcoin Wiki](https://thehashcoin.info/)
 for help and more information.
 * Ask for help on [#thehashcoin](http://webchat.freenode.net?channels=thehashcoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=thehashcoin).
-* Ask for help on the [LitecoinTalk](https://litecointalk.io/) forums.
+* Ask for help on the [ThehashcoinTalk](https://thehashcointalk.io/) forums.
 
 Building
 ---------------------
@@ -61,7 +61,7 @@ The Thehashcoin repo's [root README](/README.md) contains relevant information o
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [LitecoinTalk](https://litecointalk.io/) forums.
+* Discuss on the [ThehashcoinTalk](https://thehashcointalk.io/) forums.
 * Discuss general Thehashcoin development on #thehashcoin-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=thehashcoin-dev).
 
 ### Miscellaneous

@@ -153,7 +153,7 @@ to see it.
 
 **testnet and regtest modes**
 
-Run with the -testnet option to run with "play litecoins" on the test network, if you
+Run with the -testnet option to run with "play thehashcoins" on the test network, if you
 are testing multi-machine code that needs to operate across the internet.
 
 If you are testing something that can run on one machine, run with the -regtest option.
@@ -176,10 +176,10 @@ which includes known Valgrind warnings in our dependencies that cannot be fixed
 in-tree. Example use:
 
 ```shell
-$ valgrind --suppressions=contrib/valgrind.supp src/test/test_litecoin
+$ valgrind --suppressions=contrib/valgrind.supp src/test/test_thehashcoin
 $ valgrind --suppressions=contrib/valgrind.supp --leak-check=full \
-      --show-leak-kinds=all src/test/test_litecoin --log_level=test_suite
-$ valgrind -v --leak-check=full src/litecoind -printtoconsole
+      --show-leak-kinds=all src/test/test_thehashcoin --log_level=test_suite
+$ valgrind -v --leak-check=full src/thehashcoind -printtoconsole
 ```
 
 **compiling for test coverage**
@@ -195,7 +195,7 @@ To enable LCOV report generation during test runs:
 make
 make cov
 
-# A coverage report will now be accessible at `./test_litecoin.coverage/index.html`.
+# A coverage report will now be accessible at `./test_thehashcoin.coverage/index.html`.
 ```
 
 Locking/mutex usage notes
@@ -242,7 +242,7 @@ Threads
 
 - ThreadRPCServer : Remote procedure call handler, listens on port 9332 for connections and services them.
 
-- BitcoinMiner : Generates litecoins (if wallet is enabled).
+- BitcoinMiner : Generates thehashcoins (if wallet is enabled).
 
 - Shutdown : Does an orderly shutdown of everything.
 
