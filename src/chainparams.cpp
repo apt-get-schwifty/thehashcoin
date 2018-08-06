@@ -121,7 +121,7 @@ public:
 
         genesis = CreateGenesisBlock(1530217200, 4662255, 0x1e0631b5, 1, 75 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S(""));
+        assert(consensus.hashGenesisBlock == uint256S("0x3ae85767ad3ec3dc70877cef8e256fa2244f9f3de2fb8a43c5be972dc1db08a1"));
         assert(genesis.hashMerkleRoot == uint256S("0x45e37fb95121169542534355cb8b11f99cebfbe776d20154fa34ffcdfcb7510c"));
 
        //NO DNS SEEDS YET
