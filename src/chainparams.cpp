@@ -76,10 +76,10 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 3153600;
         consensus.BIP16Height = 0; 
-        consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("0x3ae85767ad3ec3dc70877cef8e256fa2244f9f3de2fb8a43c5be972dc1db08a1");
-        consensus.BIP65Height = 0; 
-        consensus.BIP66Height = 0; 
+        consensus.BIP34Height = 150;
+        consensus.BIP34Hash = uint256S("0x9fe9e9223aa2921f2989b90a9a59965943827fa27b9da9e21fed77b093d36547");
+        consensus.BIP65Height = 200; 
+        consensus.BIP66Height = 250; 
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
         consensus.nPowTargetTimespan = 30 * 60; // 30 minutes
         consensus.nPowTargetSpacing = 0.5 * 60; // 30 seconds
@@ -102,10 +102,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1563663600; 
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x01");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000000000971117f1ee");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x3ae85767ad3ec3dc70877cef8e256fa2244f9f3de2fb8a43c5be972dc1db08a1"); // block 961
+        consensus.defaultAssumeValid = uint256S("0x60c36503da2c3d34f922dab1da4b4a41cfa46265bbeb75266e5e39a318dd26f2"); // block 961
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -132,9 +132,9 @@ public:
         vSeeds.emplace_back("dnsseed.thehashcoinpool.org");
         vSeeds.emplace_back("dnsseed.koin-project.com");
 */
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,51);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,66);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,65);
+        base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,63);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x01, 0x8D, 0x1E, 0x0D};
         base58Prefixes[EXT_SECRET_KEY] = {0x02, 0xE3, 0xAC, 0xD2};
@@ -150,13 +150,15 @@ public:
         checkpointData = {
               {
                 { 0, uint256S("0x3ae85767ad3ec3dc70877cef8e256fa2244f9f3de2fb8a43c5be972dc1db08a1")},
-               // below blocks have been invalidated, reset block chain to genesis block
-               /* { 125, uint256S("0x9cbc1b3d856001c8de6509ac8acd82c7d82aff621620d27cf934a00ed3702cf6")},
-                { 250, uint256S("0x6ba58c9bbbe801e500300117a290af80161d386477884d7ef694fe714e24bee3")},
-                { 500, uint256S("0xca805f0e89a0363a975c375c5a7afcfb74f3fa10bff97006942223c5a4afd1ca")},
-                { 750, uint256S("0xdfda314f99254e515d1ead892a83c1e6c835ee8abe5da9535710de1a7a9832c9")},
-                { 939, uint256S("0x23d843e68d28aac8e47820ab981e408f9f6bfd643d13edeac1a4edffb9d57b86")}
-               */
+                { 125, uint256S("0xa8708e5de64bd05a2b6d817d2293927c9b309904f0302660204541809cfe26b3")},
+                { 250, uint256S("0x3d0822ab1f0892a2bd72baed2f6898dfb8d84b00b5c11d13fafa3660689115ff")},
+                { 500, uint256S("0xdffaa42b41a4c7bb3894501d3290c0985d0b8367f8f37165cb2ad7d659536ba4")},
+                { 750, uint256S("0xae6712bfe5dab07222f528a7cf2c37b468a1db9783a3199b6c180c0d08736a04")},
+                { 1000, uint256S("0x08df0590b6f25790b1c5c47557fe9834513ffb22a4b4ca7e2981b485f20d7682")}
+                { 1500, uint256S("0xbef7c66e118186a1c678a02a1a101c7e308f2a419fc3c15ed19134edc3baf204")}
+                { 2500, uint256S("0x58867e1f6ba3d4bfbb724ba96c7333725312834c0f6f4c6c1d6ef9bdada0189e")}
+                { 3500, uint256S("0x8b970560ad00fec2ccab138d0dedc497ea5f9f9d595a7a6f845e8868389303c7")}
+                { 4729, uint256S("0x60c36503da2c3d34f922dab1da4b4a41cfa46265bbeb75266e5e39a318dd26f2")}
                 
                 
 
@@ -167,10 +169,10 @@ public:
 
         chainTxData = ChainTxData{
             // Data as of genesis
-              1530217200, // * UNIX timestamp of last known number of transactions
-              0,  // * total number of transactions between genesis and that timestamp
+              1534104198, // * UNIX timestamp of last known number of transactions
+              7625,  // * total number of transactions between genesis and that timestamp
                     //   (the tx=... number in the SetBestChain debug.log lines)
-              0.0001532872303132668     // * estimated number of transactions per second after that timestamp
+              0.04932097127957608     // * estimated number of transactions per second after that timestamp
         };
     }
 };
