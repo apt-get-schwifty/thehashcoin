@@ -5,7 +5,7 @@ At this time we only have 1 dedicated seed node, which has been hardcoded into t
 
 connect=162.208.9.51:421
 
-None of the icons or splashes/thematics of the qt-GUI have been changed yet.
+Very few (only the mined transaction icon)/splashes have been altered at this time. We are saving these for finishing touches once the mechanics of the coin and pool(s) are solid. (Which at this time they are!)
 
 BUILD INSTRUCTIONS (linux only):
 
@@ -27,7 +27,7 @@ sudo apt-get install libqrencode-dev protobuf-compiler miniupnpc
 
 ---IMPORTANT---	
 
-DEPRECATED VERSION OF BERKLEY DB HEADERS IS REQUIRED!
+DEPRECATED VERSION OF BERKLEY DB HEADERS REQUIRED!
 
 To fetch them on ubuntu use:
 
@@ -83,15 +83,27 @@ We currently have a NOMP pool that's always running that can be accessed by prov
 
 stratum+tcp://162.208.9.65:3333
 
+UPDATE:
+
+Pool payout is working flawlessly! We have also updated the pool to use multiple ports for varying stratum difficulties.
+
+The standard stratum port 3333 is @ stratum difficulty 75, for a lower difficulty use port 3032 (stratum difficulty 32) and for a higher difficulty use port 3256 (stratum difficulty 256).
+
 Be sure if you're going to use this pool you append the following line in your thehashcoin.conf
 
 rpcport=422
 
 Username is the address you wish to receive payment for submitted shares in the event of a block being found.
 
+---IMPORTANT---
+
+PLEASE MAKE SURE THE ADDRESS YOU USE FOR PAYOUT IS A LEGACY ADDRESS (STARTS WITH THE LETTER T). SEGWIT IS FULLY DEPLOYED/ACTIVE ON THE NETWORK BUT IS INCOMPATIBLE WITH NOMP'S PAYMENT PROCESSOR. SEGWIT ADDRESSES BEGIN WITH THE LETTER S FOR THIS COIN!
+
 At this time there is no strict password enforcement so you can type anything you want as a password.
 
 Our pool does not take any fees at this time.
+
+We will be adding more seed nodes and at least one more pool in the immediate future!
 
 If you have any questions, comments, concerns or if you wish to contribute please contact me on github at https://github.com/apt-get-schwifty/thehashcoin OR via email at bhuff25930@gmail.com
 
