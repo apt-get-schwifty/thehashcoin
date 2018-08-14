@@ -1,4 +1,4 @@
-Thank you for checking out TheHashCoin! This is a project is currently being run solely by my two brothers and I and is still in it's infancy.
+Thank you for checking out TheHashCoin! This is a project that is currently being run solely by my two brothers and I and is still in it's infancy.
 
 At this time we only have 1 dedicated seed node (with two different public IP addresses), which has been hardcoded into the source code, and does function (usually). If for some reason your wallet doesn't sync with the blockchain please append your thehashcoin.conf to include the following line:
 
