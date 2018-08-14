@@ -1,7 +1,6 @@
-Thank you for checking out TheHashCoin! This is a project currently being run solely my two brothers and I. 
-At this time the project is still in it's infancy.
+Thank you for checking out TheHashCoin! This is a project is currently being run solely by my two brothers and I and is still in it's infancy.
 
-At this time we only have 1 dedicated seed node, which has been hardcoded into the source code, and does function (usually). If for some reason your wallet doesn't sync with the blockchain please append your thehashcoin.conf to include the following line:
+At this time we only have 1 dedicated seed node (with two different public IP addresses), which has been hardcoded into the source code, and does function (usually). If for some reason your wallet doesn't sync with the blockchain please append your thehashcoin.conf to include the following line:
 
 connect=162.208.9.51:421
 
@@ -57,7 +56,13 @@ After saving the changes:
 
 add-apt-key /directory/of/pgp-key-file/bitcoin-repo.pgp
 
-You should now be set to do sudo apt-get update then sudo apt-get install libdb4.8-dev libdb4.8++-dev
+You should now be set to do:
+
+sudo apt-get update 
+
+then: 
+
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
 3. Compile and launch:
 
