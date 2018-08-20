@@ -48,7 +48,7 @@ deb-src http://ppa.launchpad.net/bitcoin/bitcoin/ubuntu YOUR_UBUNTU_VERSION_HERE
 
 Replace YOUR_UBUNTU_VERSION_HERE with either xenial or cosmic and even if you're running a different distro you won't have issues since all we will be fetching from this repo is the Berkely DB Headers.
 
-Add repository PGP key to apt-key using add-apt-key:
+Add repository PGP key to apt-key using apt-key add:
 
 Follow this link and copy the entire PGP Key, and save it to your system (take note of where you save it)
 
@@ -58,7 +58,7 @@ Edit the text file you pasted the key and remove the lines that begin with "Vers
 
 After saving the changes:
 
-add-apt-key /directory/of/pgp-key-file/bitcoin-repo.pgp
+apt-key add /directory/of/pgp-key-file/bitcoin-repo.pgp
 
 You should now be set to do:
 
@@ -85,6 +85,10 @@ If you only run make, the compiled binaries will need to be run from within the 
 If you only run make and don't have the Qt dependencies installed, all rpc commands must be issued using thehashcoin-cli "insertrpccall" from within thehashcoin/src with ./thehashcoin-cli  
 
 If you do make install the binaries can be run from within any directory with the terminal command thehashcoin-qt/thehashcoind/thehashcoin-cli etc.
+
+***FOR WINDOWS***:
+
+Please refer to instructions in VM-README.md within this repository for directions on how to use the TheHashCoin-VM with preinstalled dependencies and precompiled binaries to easily run a wallet using windows.
 
 MINING POOL:
 
