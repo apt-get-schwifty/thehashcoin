@@ -108,13 +108,21 @@ rpcport=422
 
 Username is the address you wish to receive payment for submitted shares in the event of a block being found.
 
+We also have a working pool at https://saltpool.net
+ 
+To access this pool please point your miner to the following URL:
+
+stratum+tcp://saltpool.net:3433 using the address you wish to receive coins with as your user name and using THC as your password
+
 ---IMPORTANT---
 
 PLEASE MAKE SURE THE ADDRESS YOU USE FOR PAYOUT IS A LEGACY ADDRESS (STARTS WITH THE LETTER T). SEGWIT IS FULLY DEPLOYED/ACTIVE ON THE NETWORK BUT IS INCOMPATIBLE WITH NOMP'S PAYMENT PROCESSOR. SEGWIT ADDRESSES BEGIN WITH THE LETTER S FOR THIS COIN!
 
-At this time there is no strict password enforcement so you can type anything you want as a password.
+At this time there is no strict password enforcement so you can type anything you want as a password if using our NOMP pool.
 
 Our pool does not take any fees at this time.
+
+Saltpool does take a very small 0.5% fee.
 
 We will be adding more seed nodes and at least one more pool in the immediate future!
 
