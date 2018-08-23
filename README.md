@@ -1,11 +1,14 @@
-Thank you for checking out TheHashCoin! This is a project currently being run solely my two brothers and I. 
-At this time the project is still in it's infancy.
+Thank you for checking out TheHashCoin! This is a project that is currently being run solely by my two brothers and I and is still in it's infancy.
 
-At this time we only have 1 dedicated seed node, which has been hardcoded into the source code, and does function (usually). If for some reason your wallet doesn't sync with the blockchain please append your thehashcoin.conf to include the following line:
+At this time we only have 2 dedicated seed nodes (with 3 different public IP addresses), which have been hardcoded into the source code, and do function (usually). If for some reason your wallet doesn't sync with the blockchain please try appending your thehashcoin.conf to include the following lines:
 
 connect=162.208.9.51:421
 
-None of the icons or splashes/thematics of the qt-GUI have been changed yet.
+connect=192.243.103.250:421
+
+connect=162.208.9.65:421
+
+Very few (only the mined transaction icon)/splashes have been altered at this time. We are saving these for finishing touches once the mechanics of the coin and pool(s) are solid. (Which at this time they are!)
 
 BUILD INSTRUCTIONS (linux only):
 
@@ -27,7 +30,7 @@ sudo apt-get install libqrencode-dev protobuf-compiler miniupnpc
 
 ---IMPORTANT---	
 
-DEPRECATED VERSION OF BERKLEY DB HEADERS IS REQUIRED!
+DEPRECATED VERSION OF BERKLEY DB HEADERS REQUIRED!
 
 To fetch them on ubuntu use:
 
@@ -45,7 +48,7 @@ deb-src http://ppa.launchpad.net/bitcoin/bitcoin/ubuntu YOUR_UBUNTU_VERSION_HERE
 
 Replace YOUR_UBUNTU_VERSION_HERE with either xenial or cosmic and even if you're running a different distro you won't have issues since all we will be fetching from this repo is the Berkely DB Headers.
 
-Add repository PGP key to apt-key using add-apt-key:
+Add repository PGP key to apt-key using apt-key add:
 
 Follow this link and copy the entire PGP Key, and save it to your system (take note of where you save it)
 
@@ -55,9 +58,15 @@ Edit the text file you pasted the key and remove the lines that begin with "Vers
 
 After saving the changes:
 
-add-apt-key /directory/of/pgp-key-file/bitcoin-repo.pgp
+apt-key add /directory/of/pgp-key-file/bitcoin-repo.pgp
 
-You should now be set to do sudo apt-get update then sudo apt-get install libdb4.8-dev libdb4.8++-dev
+You should now be set to do:
+
+sudo apt-get update 
+
+then: 
+
+sudo apt-get install libdb4.8-dev libdb4.8++-dev
 
 3. Compile and launch:
 
@@ -77,11 +86,21 @@ If you only run make and don't have the Qt dependencies installed, all rpc comma
 
 If you do make install the binaries can be run from within any directory with the terminal command thehashcoin-qt/thehashcoind/thehashcoin-cli etc.
 
+***FOR WINDOWS***:
+
+Please refer to instructions in VM-README.md within this repository for directions on how to use the TheHashCoin-VM with preinstalled dependencies and precompiled binaries to easily run a wallet using windows.
+
 MINING POOL:
 
 We currently have a NOMP pool that's always running that can be accessed by providing your choice of mining software with the following url:
 
 stratum+tcp://162.208.9.65:3333
+
+UPDATE:
+
+Pool payout is working flawlessly! We have also updated the pool to use multiple ports for varying stratum difficulties.
+
+The standard stratum port 3333 is @ stratum difficulty 75, for a lower difficulty use port 3032 (stratum difficulty 32) and for a higher difficulty use port 3256 (stratum difficulty 256).
 
 Be sure if you're going to use this pool you append the following line in your thehashcoin.conf
 
@@ -89,9 +108,23 @@ rpcport=422
 
 Username is the address you wish to receive payment for submitted shares in the event of a block being found.
 
-At this time there is no strict password enforcement so you can type anything you want as a password.
+We also have a working pool at https://saltpool.net
+ 
+To access this pool please point your miner to the following URL:
+
+stratum+tcp://saltpool.net:3433 using the address you wish to receive coins with as your user name and using THC as your password
+
+---IMPORTANT---
+
+PLEASE MAKE SURE THE ADDRESS YOU USE FOR PAYOUT IS A LEGACY ADDRESS (STARTS WITH THE LETTER T). SEGWIT IS FULLY DEPLOYED/ACTIVE ON THE NETWORK BUT IS INCOMPATIBLE WITH NOMP'S PAYMENT PROCESSOR. SEGWIT ADDRESSES BEGIN WITH THE LETTER S FOR THIS COIN!
+
+At this time there is no strict password enforcement so you can type anything you want as a password if using our NOMP pool.
 
 Our pool does not take any fees at this time.
+
+Saltpool does take a very small 0.5% fee.
+
+We will be adding more seed nodes and at least one more pool in the immediate future!
 
 If you have any questions, comments, concerns or if you wish to contribute please contact me on github at https://github.com/apt-get-schwifty/thehashcoin OR via email at bhuff25930@gmail.com
 
