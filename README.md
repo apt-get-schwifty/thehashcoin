@@ -92,6 +92,8 @@ Please use the following link to download the official TheHashCoin x86/64 bit Wi
 
 https://ln.sync.com/dl/adc725780/6m2uw34j-acwc7pqe-nd4m97vm-rr96xv77
 
+the binaries are also available locally here on github under TheHashCoin Release v0.2
+
 MINING POOL:
 
 We currently have a NOMP pool that's always running that can be accessed by providing your choice of mining software with the following url:
