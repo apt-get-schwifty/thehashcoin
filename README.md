@@ -88,17 +88,15 @@ If you do make install the binaries can be run from within any directory with th
 
 ***FOR WINDOWS***:
 
-Please refer to instructions in VM-README.md within this repository for directions on how to use the TheHashCoin-VM with preinstalled dependencies and precompiled binaries to easily run a wallet using windows.
+Please use the following link to download the official TheHashCoin x86/64 bit Windows binaries:
+
+https://ln.sync.com/dl/adc725780/6m2uw34j-acwc7pqe-nd4m97vm-rr96xv77
 
 MINING POOL:
 
 We currently have a NOMP pool that's always running that can be accessed by providing your choice of mining software with the following url:
 
 stratum+tcp://162.208.9.65:3333
-
-UPDATE:
-
-Pool payout is working flawlessly! We have also updated the pool to use multiple ports for varying stratum difficulties.
 
 The standard stratum port 3333 is @ stratum difficulty 75, for a lower difficulty use port 3032 (stratum difficulty 32) and for a higher difficulty use port 3256 (stratum difficulty 256).
 
