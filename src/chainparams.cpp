@@ -252,9 +252,9 @@ public:
         fMineBlocksOnDemand = false;
 
         checkpointData = (CCheckpointData) {
-           // {
+            {
                 //{2056, uint256S("17748a31ba97afdc9a4f86837a39d287e3e7c7290a08a1d816c5969c78a83289")},
-          //  }
+            }
         };
 
         chainTxData = ChainTxData{
