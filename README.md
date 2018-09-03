@@ -92,7 +92,7 @@ Please use the following link to download the official TheHashCoin x86/64 bit Wi
 
 https://ln.sync.com/dl/adc725780/6m2uw34j-acwc7pqe-nd4m97vm-rr96xv77
 
-the binaries are also available locally here on github under TheHashCoin Release v0.2
+The binaries are also available locally here on github under TheHashCoin Release v0.2
 
 MINING POOL:
 
@@ -106,13 +106,15 @@ Be sure if you're going to use this pool you append the following line in your t
 
 rpcport=422
 
-Username is the address you wish to receive payment for submitted shares in the event of a block being found.
+The username is the address you wish to receive payment for submitted shares in the event of a block being found.
 
 We also have a working pool at https://saltpool.net
  
 To access this pool please point your miner to the following URL:
 
-stratum+tcp://saltpool.net:3433 using the address you wish to receive coins with as your user name and using THC as your password
+stratum+tcp://saltpool.net:3433 
+
+Use the address you wish to receive coins with as your user name and use THC as your password.
 
 ---IMPORTANT---
 
