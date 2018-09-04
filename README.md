@@ -6,7 +6,7 @@ connect=162.208.9.51:421
 
 connect=192.243.103.250:421
 
-connect=162.208.9.65:421
+connect=207.148.3.126:421
 
 Very few (only the mined transaction icon)/splashes have been altered at this time. We are saving these for finishing touches once the mechanics of the coin and pool(s) are solid. (Which at this time they are!)
 
@@ -132,8 +132,7 @@ https://discord.gg/NhCcEeE
 
 All of the servers we have (seed nodes, pools, block explorer etc.) will all have domains associated with them shortly, we are just awaiting our logo to be finished before we kick our marketing/branding to the next level.
 
-
-If you have any questions, comments, concerns or if you wish to contribute please contact me on github at https://github.com/apt-get-schwifty/thehashcoin OR via email at bhuff25930@gmail.com
+If you have any questions, comments, concerns or if you wish to contribute please contact me on github at https://github.com/apt-get-schwifty/thehashcoin OR via email at bhuff25930@gmail.com OR stop by our discord channel at https://discord.gg/NhCcEeE
 
 Thank you again for checking our coin out!
 
