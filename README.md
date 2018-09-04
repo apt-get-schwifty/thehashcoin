@@ -88,17 +88,15 @@ If you do make install the binaries can be run from within any directory with th
 
 ***FOR WINDOWS***:
 
-Please use the following link to download the official TheHashCoin x86/64 bit Windows binaries:
+Pre-compiled 64 & 32 bit Windows binaries are available locally here on github under TheHashCoin Release v0.2 using the following link:
 
-https://ln.sync.com/dl/adc725780/6m2uw34j-acwc7pqe-nd4m97vm-rr96xv77
-
-The binaries are also available locally here on github under TheHashCoin Release v0.2
+https://github.com/apt-get-schwifty/thehashcoin/releases
 
 MINING POOL:
 
 We currently have a NOMP pool that's always running that can be accessed by providing your choice of mining software with the following url:
 
-stratum+tcp://162.208.9.65:3333
+stratum+tcp://192.243.103.250:3333
 
 The standard stratum port 3333 is @ stratum difficulty 75, for a lower difficulty use port 3032 (stratum difficulty 32) and for a higher difficulty use port 3256 (stratum difficulty 256).
 
@@ -114,19 +112,26 @@ To access this pool please point your miner to the following URL:
 
 stratum+tcp://saltpool.net:3433 
 
+We now also have a pool being run by the awesome folks over at INFOCoin! Please use the following URL to access it:
+
+stratum+tcp://hashncash.net:3433
+
 Use the address you wish to receive coins with as your user name and use THC as your password.
-
----IMPORTANT---
-
-PLEASE MAKE SURE THE ADDRESS YOU USE FOR PAYOUT IS A LEGACY ADDRESS (STARTS WITH THE LETTER T). SEGWIT IS FULLY DEPLOYED/ACTIVE ON THE NETWORK BUT IS INCOMPATIBLE WITH NOMP'S PAYMENT PROCESSOR. SEGWIT ADDRESSES BEGIN WITH THE LETTER S FOR THIS COIN!
 
 At this time there is no strict password enforcement so you can type anything you want as a password if using our NOMP pool.
 
 Our pool does not take any fees at this time.
 
-Saltpool does take a very small 0.5% fee.
+Saltpool and hashncash do take a very small 0.5% fee.
 
-We will be adding more seed nodes and at least one more pool in the immediate future!
+We are also happy to announce that we have a working block explorer at http://162.208.9.65:3001
+
+We also have an official discord channel where all are welcome to talk crypto, cannabis, receive support or just chat! Please feel free to drop in and say hello!
+
+https://discord.gg/NhCcEeE
+
+All of the servers we have (seed nodes, pools, block explorer etc.) will all have domains associated with them shortly, we are just awaiting our logo to be finished before we kick our marketing/branding to the next level.
+
 
 If you have any questions, comments, concerns or if you wish to contribute please contact me on github at https://github.com/apt-get-schwifty/thehashcoin OR via email at bhuff25930@gmail.com
 
