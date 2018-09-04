@@ -1,6 +1,6 @@
 Thank you for checking out TheHashCoin! This is a project that is currently being run solely by my two brothers and I and is still in it's infancy.
 
-At this time we only have 2 dedicated seed nodes (with 3 different public IP addresses), which have been hardcoded into the source code, and do function (usually). If for some reason your wallet doesn't sync with the blockchain please try appending your thehashcoin.conf to include the following lines:
+At this time we only have 3 dedicated seed nodes which have been hardcoded into the source code, and do function (usually). If for some reason your wallet doesn't sync with the blockchain please try appending your thehashcoin.conf to include the following lines:
 
 connect=162.208.9.51:421
 
